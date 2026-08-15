@@ -7,7 +7,7 @@ html{
 }
 
 main{
-    margin-bottom: 250px;
+    margin-bottom: 270px;
 }
 
 footer.footer{
@@ -24,6 +24,7 @@ p{
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position: absolute;
@@ -32,6 +33,7 @@ p{
         width:100%;
         height:100%;
         background-image: url(../images/TokyoRennesFoodPictures/FondHeroScene.jpg);
+        background-position: center;
         background-size: cover;
         filter: brightness(0.3);
     }
@@ -42,7 +44,7 @@ p{
     }
 
     .hero-scene-content{
-        height: 300px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -57,7 +59,8 @@ p{
 .image-card{
     position:relative;
     &:hover{
-        .titre-image{
+        .titre-image,
+        .action-image-buttons{
             opacity: 1;
         }
         img{
@@ -77,4 +80,23 @@ p{
         opacity: 0;
         transition: all 0.3s;
     }
+
+    .action-image-buttons{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+
+        opacity: 0;
+        transition: all 0.3s;
+
+    }
+
+}
+        
+.form-label{
+    color: $primary;
 }
