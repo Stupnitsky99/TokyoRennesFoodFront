@@ -20,7 +20,7 @@ jobs:
       uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
         username: 'tokyorennesfood'
-        server: 'ftp-tokyorennesfood.alwaysdata.net'
+        server: 'ssh-tokyorennesfood.alwaysdata.net'
         password: ${{ secrets.ftp_password }}
         local_path: './*'
         remote_path: 'www/'
