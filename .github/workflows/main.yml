@@ -14,6 +14,7 @@ jobs:
         server: ftp-tokyorennesfood.alwaysdata.net
         username: tokyorennesfood
         password: ${{ secrets.ftp_password }}
+        protocol: ftps
         exclude: |
           **/.git*
           **/.git*/**
